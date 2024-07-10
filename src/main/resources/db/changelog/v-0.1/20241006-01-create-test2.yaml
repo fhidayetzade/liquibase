@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20241006-01
+      author: faridhidayatzada
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                  name: id
+                  type: BIGINT
+              - column:
+                  name: name
+                  type: varchar2(255)
+            tableName: test2
+

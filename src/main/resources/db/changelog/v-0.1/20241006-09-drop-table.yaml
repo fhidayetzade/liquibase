@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20241006-07
+      author: faridhidayatzada
+      changes:
+        - dropTable:
+            tableName: test3

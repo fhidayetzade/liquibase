@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20241006-10
+      author: faridhidayatzada
+      changes:
+        - renameColumn:
+            tableName: test_2
+            newColumnName: firstname
+            oldColumnName: name

@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20241006-06
+      author: faridhidayatzada
+      changes:
+        - sql:
+            sql: "insert into test2 (name) values ('test2')"
+        - sql:
+            sql: "insert into test2 (name) values ('test3')"

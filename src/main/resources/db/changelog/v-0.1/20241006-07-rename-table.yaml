@@ -1,0 +1,8 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20241006-07
+      author: faridhidayatzada
+      changes:
+        - renameTable:
+            newTableName: test_2
+            oldTableName: test2

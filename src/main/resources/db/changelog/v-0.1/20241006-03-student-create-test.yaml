@@ -1,0 +1,44 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20241006-03
+      author: faridhidayatzada
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                  name: id
+                  type: BIGINT
+              - column:
+                  name: name
+                  type: varchar(255)
+              - column:
+                  name: teacher_id
+                  type: BIGINT
+            tableName: student
+  - changeSet:
+      id: 20241006-04
+      author: faridhidayatzada
+      changes:
+        - createIndex:
+            columns:
+              - column:
+                  name: teacher_id
+            indexName: farid16
+            tableName: student
+  - changeSet:
+      id: 20241006-05
+      author: faridhidayatzada
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: teacher_id
+            baseTableName: student
+            constraintName: farid166
+            onDelete: RESTRICT
+            onUpdate: RESTRICT
+            referencedColumnNames: id
+            referencedTableName: teacher
+            validate: true
